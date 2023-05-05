@@ -41,6 +41,9 @@ public class AdditionalServiceFrame extends JFrame implements MouseListener, Act
     int index;
 
     AdditionalServiceFrame(int indexx, Database databasee){
+        ImageIcon logo = new ImageIcon("src/Final_Project/assets/logo1.png");
+        this.setIconImage(logo.getImage());
+
         index = indexx;
         database = databasee;
         title.setText("Additional Service Booking");
@@ -93,7 +96,7 @@ public class AdditionalServiceFrame extends JFrame implements MouseListener, Act
         label3.setFont(new Font("Times New Roman", Font.PLAIN, 20));
         label3.setBounds(0,0,100,40);
         label3.setHorizontalAlignment(JLabel.CENTER);
-        spinnerModel = new SpinnerNumberModel(1,1,10,1);
+        spinnerModel = new SpinnerNumberModel(1,1,10000,1);
         spinnerQuantity = new JSpinner(spinnerModel);
         spinnerQuantity.addKeyListener(new KeyAdapter() {
             @Override
@@ -330,7 +333,7 @@ public class AdditionalServiceFrame extends JFrame implements MouseListener, Act
             inputDate = textField1.getText();
             if(textField1.getText().isEmpty() || comboBox.getItemCount()==0 || spinnerQuantity.getValue()==null || (!restaurant.isSelected() && !spa.isSelected() && !lounge.isSelected())){
                 getToolkit().beep();
-                JOptionPane.showMessageDialog(this,"Please fill all the form","Complete form!",JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this,"Please fill all the form","Uncompleted form!",JOptionPane.ERROR_MESSAGE);
             }else {
             if (!isValidTanggal(inputDate)) {
                 hasilLabelTanggal.setText("Format date must be dd/mm/yyyy");

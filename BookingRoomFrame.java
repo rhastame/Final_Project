@@ -48,6 +48,9 @@ public class BookingRoomFrame extends JFrame implements ActionListener {
     int index;
     Database database;
     BookingRoomFrame(int indexx, Database databasee){
+        ImageIcon logo = new ImageIcon("src/Final_Project/assets/logo1.png");
+        this.setIconImage(logo.getImage());
+
         database = databasee;
         index = indexx;
         title.setText("Room Booking");
@@ -116,7 +119,7 @@ public class BookingRoomFrame extends JFrame implements ActionListener {
 //        label3.setBackground(Color.CYAN);
         label3.setHorizontalAlignment(JLabel.CENTER);
 
-        spinnerModel = new SpinnerNumberModel(1,1,10,1);
+        spinnerModel = new SpinnerNumberModel(1,1,10000,1);
         spinnerQuantity = new JSpinner(spinnerModel);
 
         spinnerQuantity.setPreferredSize(new Dimension(225,35));

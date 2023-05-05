@@ -57,6 +57,8 @@ public class MenuFrame extends JFrame implements ActionListener {
     ArrayList<AdditionalService> adds;
 
     MenuFrame(int indexx, Database databasee, ArrayList<AdditionalService> addss){
+        ImageIcon logo = new ImageIcon("src/Final_Project/assets/logo1.png");
+        this.setIconImage(logo.getImage());
         database = databasee;
         index = indexx;
         adds = addss;
@@ -395,51 +397,51 @@ public class MenuFrame extends JFrame implements ActionListener {
         }
     }
     private ArrayList<Menu> inputMenu(ArrayList<Menu> menu){
-        if(textField1.getText()!=null){
+        if(!textField1.getText().isEmpty()){
             menu.add(new Menu());
             menu.get(menu.size()-1).setName("Poached Egg Benedict");
             menu.get(menu.size()-1).setPrice(60000);
             menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField1.getText()));
-        }else if(textField2.getText()!=null){
+        }if(!textField2.getText().isEmpty()){
             menu.add(new Menu());
             menu.get(menu.size()-1).setName("Egg Hash Brown");
             menu.get(menu.size()-1).setPrice(55000);
-            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField1.getText()));
-        }else if(textField3.getText()!=null){
+            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField2.getText()));
+        }if(!textField3.getText().isEmpty()){
             menu.add(new Menu());
             menu.get(menu.size()-1).setName("Ham and Cheese Bake");
             menu.get(menu.size()-1).setPrice(70000);
-            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField1.getText()));
-        }else if(textField4.getText()!=null){
+            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField3.getText()));
+        }if(!textField4.getText().isEmpty()){
             menu.add(new Menu());
             menu.get(menu.size()-1).setName("Salmon Mac and Cheese");
             menu.get(menu.size()-1).setPrice(85000);
-            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField1.getText()));
-        }else if(textField5.getText()!=null){
+            menu.get(menu.size()-1).setQuantity(Integer.parseInt((textField4.getText())));
+        }if(!textField5.getText().isEmpty()){
             menu.add(new Menu());
             menu.get(menu.size()-1).setName("Cheeseburger Meat Loaf");
             menu.get(menu.size()-1).setPrice(100000);
-            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField1.getText()));
-        }else if(textField6.getText()!=null){
+            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField5.getText()));
+        }if(!textField6.getText().isEmpty()){
             menu.add(new Menu());
             menu.get(menu.size()-1).setName("Penne all' Amatriciana");
             menu.get(menu.size()-1).setPrice(100000);
-            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField1.getText()));
-        }else if(textField7.getText()!=null){
+            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField6.getText()));
+        }if(!textField7.getText().isEmpty()){
             menu.add(new Menu());
             menu.get(menu.size()-1).setName("Steak and Eggs");
             menu.get(menu.size()-1).setPrice(100000);
-            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField1.getText()));
-        }else if(textField8.getText()!=null){
+            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField7.getText()));
+        }if(!textField8.getText().isEmpty()){
             menu.add(new Menu());
             menu.get(menu.size()-1).setName("Salt Pepper Chicken Bites");
             menu.get(menu.size()-1).setPrice(100000);
-            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField1.getText()));
-        }else if(textField9.getText()!=null){
+            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField8.getText()));
+        }if(!textField9.getText().isEmpty()){
             menu.add(new Menu());
             menu.get(menu.size()-1).setName("Popcorn Prawn Rolls w/ Mayo");
             menu.get(menu.size()-1).setPrice(100000);
-            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField1.getText()));
+            menu.get(menu.size()-1).setQuantity(Integer.parseInt(textField9.getText()));
         }
         return menu;
     }

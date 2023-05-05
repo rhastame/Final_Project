@@ -2,7 +2,7 @@ package Final_Project;
 
 public class Menu {
     String name;
-    int price;
+    Integer price;
 
     public int getQuantity() {
         return quantity;

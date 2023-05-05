@@ -14,6 +14,8 @@ public class History extends JFrame { JLabel labelTitle = new JLabel();
     int index;
 
     History(int indexx, Database database){
+        ImageIcon logo = new ImageIcon("src/Final_Project/assets/logo1.png");
+        this.setIconImage(logo.getImage());
         this.index = indexx;
         this.database = database;
 //        temps = customers;
