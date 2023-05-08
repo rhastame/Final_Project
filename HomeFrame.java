@@ -121,6 +121,7 @@ public class HomeFrame extends JFrame implements ActionListener, MouseListener {
         setMinimumSize(this.getMinimumSize());
         setVisible(true);
         setLocationRelativeTo(null);
+        this.setResizable(false);
     }
 
     @Override
