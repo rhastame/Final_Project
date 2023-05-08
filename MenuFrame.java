@@ -57,7 +57,7 @@ public class MenuFrame extends JFrame implements ActionListener {
     ArrayList<AdditionalService> adds;
 
     MenuFrame(int indexx, Database databasee, ArrayList<AdditionalService> addss){
-        ImageIcon logo = new ImageIcon("src/Final_Project/assets/logo1.png");
+        ImageIcon logo = new ImageIcon("./assets/logo1.png");
         this.setIconImage(logo.getImage());
         database = databasee;
         index = indexx;
@@ -65,7 +65,7 @@ public class MenuFrame extends JFrame implements ActionListener {
         JLayeredPane layeredPane = new JLayeredPane();
         layeredPane.setBounds(0,0,800,600);
 
-        ImageIcon background = new ImageIcon("src/Final_Project/assets/bgMenu.jpg");
+        ImageIcon background = new ImageIcon("./assets/bgMenu.jpg");
         Image img = background.getImage();
         Image temp = img.getScaledInstance(800,600,Image.SCALE_SMOOTH);
         background = new ImageIcon(temp);
@@ -223,13 +223,13 @@ public class MenuFrame extends JFrame implements ActionListener {
         textField9.setBackground(new Color(0Xb5a191));
         textField9.setBounds(430, 475,60,30);
 
-        ImageIcon icon = new ImageIcon("src/Final_Project/assets/img1.png");
+        ImageIcon icon = new ImageIcon("./assets/img1.png");
         image1.setIcon(icon);
         image1.setBounds(540,95,200,125);
-        ImageIcon icon2 = new ImageIcon("src/Final_Project/assets/img2.png");
+        ImageIcon icon2 = new ImageIcon("./assets/img2.png");
         image2.setIcon(icon2);
         image2.setBounds(540,235,200,125);
-        ImageIcon icon3 = new ImageIcon("src/Final_Project/assets/img3.png");
+        ImageIcon icon3 = new ImageIcon("./assets/img3.png");
         image3.setIcon(icon3);
         image3.setBounds(540,380,200,125);
 

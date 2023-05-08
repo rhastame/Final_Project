@@ -48,7 +48,7 @@ public class BookingRoomFrame extends JFrame implements ActionListener {
     int index;
     Database database;
     BookingRoomFrame(int indexx, Database databasee){
-        ImageIcon logo = new ImageIcon("src/Final_Project/assets/logo1.png");
+        ImageIcon logo = new ImageIcon("./assets/logo1.png");
         this.setIconImage(logo.getImage());
 
         database = databasee;
@@ -148,13 +148,13 @@ public class BookingRoomFrame extends JFrame implements ActionListener {
         text.setBackground(new Color(0,0,0,0));
         text.setOpaque(true);
 
-        ImageIcon icon = new ImageIcon("src/Final_Project/assets/room1.png");
+        ImageIcon icon = new ImageIcon("./assets/room1.png");
         image1.setIcon(icon);
         image1.setBounds(30,220,225,170);
-        ImageIcon icon2 = new ImageIcon("src/Final_Project/assets/room2.png");
+        ImageIcon icon2 = new ImageIcon("./assets/room2.png");
         image2.setIcon(icon2);
         image2.setBounds(540,220,225,170);
-        ImageIcon icon3 = new ImageIcon("src/Final_Project/assets/room3.png");
+        ImageIcon icon3 = new ImageIcon("./assets/room3.png");
         image3.setIcon(icon3);
         image3.setBounds(285,220,225,170);
 
