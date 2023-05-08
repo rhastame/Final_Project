@@ -20,6 +20,7 @@ public class Main {
 
     public static void main(String[] args) {
         Database database = new Database();
+        //ini data dummy
 
         database.Customers.add(new Customer());
         database.Customers.get(database.Customers.size()-1).setName("tes");
