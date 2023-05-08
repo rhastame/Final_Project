@@ -25,7 +25,7 @@ public class LogInFrame extends JFrame implements ActionListener {
 //    }
 
 //    public void openFrame(){
-        ImageIcon logo = new ImageIcon("src/Final_Project/assets/logo1.png");
+        ImageIcon logo = new ImageIcon("./assets/logo1.png");
         this.setIconImage(logo.getImage());
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
