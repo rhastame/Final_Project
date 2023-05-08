@@ -206,7 +206,7 @@ public class SignUpFrame extends JFrame implements ActionListener {
                     JOptionPane.showMessageDialog(this, "Enjoy exploring our palace!", "Welcome to Galvanize Hotel!", JOptionPane.INFORMATION_MESSAGE);
                     Customer current = new Customer();
                     database.addCustomer(database.Customers, name, pass);
-                    
+
                     int index = database.Customers.size()-1;
                     this.dispose();
                     HomeFrame homeFrame = new HomeFrame(index, database);
