@@ -37,7 +37,7 @@ public class LogInFrame extends JFrame implements ActionListener {
         JLayeredPane layeredPane = new JLayeredPane();
         layeredPane.setBounds(0,0,700,500);
 
-        ImageIcon background = new ImageIcon("src/Final_Project/assets/bg.jpg");
+        ImageIcon background = new ImageIcon("./assets/bg.jpg");
         Image img = background.getImage();
         Image temp = img.getScaledInstance(700,500,Image.SCALE_SMOOTH);
         background=new ImageIcon(temp);

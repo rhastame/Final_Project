@@ -38,7 +38,7 @@ public class SignUpFrame extends JFrame implements ActionListener {
 
 //    public void openFrame(){
 //        ImageIcon logo = new ImageIcon(getClass().getResource("Final_Project/assets/logo.png"));
-        ImageIcon logo = new ImageIcon("src/Final_Project/assets/logo1.png");
+        ImageIcon logo = new ImageIcon("./assets/logo1.png");
         this.setIconImage(logo.getImage());
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -51,7 +51,7 @@ public class SignUpFrame extends JFrame implements ActionListener {
         layeredPane.setBounds(0,0,700,500);
 
 //        ImageIcon background = new ImageIcon(getClass().getResource("Final_Project/assets/bg.jpg"));
-        ImageIcon background = new ImageIcon("src/Final_Project/assets/bg.jpg");
+        ImageIcon background = new ImageIcon("./assets/bg.jpg");
         Image img = background.getImage();
         Image temp = img.getScaledInstance(700,500,Image.SCALE_SMOOTH);
         background=new ImageIcon(temp);

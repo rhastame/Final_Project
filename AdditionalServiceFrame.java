@@ -41,7 +41,7 @@ public class AdditionalServiceFrame extends JFrame implements MouseListener, Act
     int index;
 
     AdditionalServiceFrame(int indexx, Database databasee){
-        ImageIcon logo = new ImageIcon("src/Final_Project/assets/logo1.png");
+        ImageIcon logo = new ImageIcon("./assets/logo1.png");
         this.setIconImage(logo.getImage());
 
         index = indexx;
@@ -124,13 +124,13 @@ public class AdditionalServiceFrame extends JFrame implements MouseListener, Act
         text.setBackground(new Color(0,0,0,0));
         text.setOpaque(true);
 
-        ImageIcon icon = new ImageIcon("src/Final_Project/assets/spaImage.png");
+        ImageIcon icon = new ImageIcon("./assets/spaImage.png");
         image1.setIcon(icon);
         image1.setBounds(30,220,225,170);
-        ImageIcon icon2 = new ImageIcon("src/Final_Project/assets/lounge.png");
+        ImageIcon icon2 = new ImageIcon("./assets/lounge.png");
         image2.setIcon(icon2);
         image2.setBounds(285,220,225,170);
-        ImageIcon icon3 = new ImageIcon("src/Final_Project/assets/restaurantImage.png");
+        ImageIcon icon3 = new ImageIcon("./assets/restaurantImage.png");
         image3.setIcon(icon3);
         image3.setBounds(540,220,225,170);
 

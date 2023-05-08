@@ -14,7 +14,7 @@ public class History extends JFrame { JLabel labelTitle = new JLabel();
     int index;
 
     History(int indexx, Database database){
-        ImageIcon logo = new ImageIcon("src/Final_Project/assets/logo1.png");
+        ImageIcon logo = new ImageIcon("./assets/logo1.png");
         this.setIconImage(logo.getImage());
         this.index = indexx;
         this.database = database;
@@ -24,7 +24,7 @@ public class History extends JFrame { JLabel labelTitle = new JLabel();
         JLayeredPane layeredPane = new JLayeredPane();
         layeredPane.setBounds(0,0,800,600);
 
-        ImageIcon background = new ImageIcon("src/Final_Project/assets/bgH.jpg");
+        ImageIcon background = new ImageIcon("./assets/bgH.jpg");
         Image img = background.getImage();
         Image temp = img.getScaledInstance(800,600,Image.SCALE_SMOOTH);
         background = new ImageIcon(temp);
@@ -34,7 +34,7 @@ public class History extends JFrame { JLabel labelTitle = new JLabel();
         layeredPane.add(back, Integer.valueOf(0));
 
         JLabel backBtn = new JLabel();
-        ImageIcon backI= new ImageIcon("src/Final_Project/assets/back.png");
+        ImageIcon backI= new ImageIcon("./assets/back.png");
         backBtn.setIcon(backI);
         backBtn.setBounds(16,16,50,50);
         backBtn.addMouseListener(new MouseAdapter() {

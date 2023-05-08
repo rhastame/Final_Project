@@ -26,7 +26,7 @@ public class PaymentFrame extends JFrame implements ActionListener {
     JButton submitBtn;
     ButtonGroup group;
     PaymentFrame(int indexx, Database databasee){
-        ImageIcon logoup = new ImageIcon("src/Final_Project/assets/logo1.png");
+        ImageIcon logoup = new ImageIcon("./assets/logo1.png");
         this.setIconImage(logoup.getImage());
         index = indexx;
         database = databasee;
@@ -41,7 +41,7 @@ public class PaymentFrame extends JFrame implements ActionListener {
 
         //Header
         JLabel logo = new JLabel();
-        logo.setIcon(new ImageIcon("src/Final_Project/assets/logoPayment.png"));
+        logo.setIcon(new ImageIcon("./assets/logoPayment.png"));
         logo.setBounds(360,-10,800,150);
         JLabel Header = new JLabel("Transaction Details");
         Header.setFont(new Font("Poppins Light", Font.PLAIN, 24));

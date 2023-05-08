@@ -45,14 +45,14 @@ public class HomeFrame extends JFrame implements ActionListener, MouseListener {
 //        temp = customers;
         this.database = databasee;
         index = indexx;
-        ImageIcon logo = new ImageIcon("src/Final_Project/assets/logo1.png");
+        ImageIcon logo = new ImageIcon("./assets/logo1.png");
         this.setIconImage(logo.getImage());
         //header
         menuBar.add(Box.createHorizontalGlue());
         menuBar.setBackground(new Color(0x5B3C31));
         desktopPane.setBackground(new Color(0x5B3C31));
         profile.setBackground(new Color(0x5B3C31));
-        ImageIcon prof = new ImageIcon("src/Final_Project/assets/profile.png");
+        ImageIcon prof = new ImageIcon("./assets/profile.png");
         profile.setIcon(prof);
         menuBar.add(profile);
         profile.add(history);
@@ -71,7 +71,7 @@ public class HomeFrame extends JFrame implements ActionListener, MouseListener {
         JLabel text = new JLabel( "Welcome " + name + " to the Hotel");
 
         JLabel label2 = new JLabel( new HomeFrame.ColorIcon(Color.YELLOW, 800, 300) );
-        ImageIcon bg = new ImageIcon("src/Final_Project/assets/jumbotron2.png");
+        ImageIcon bg = new ImageIcon("./assets/jumbotron2.png");
         label2.setIcon(bg);
         label2.setLayout( new BoxLayout(label2, BoxLayout.Y_AXIS) );
         upperSide.setLayout(new BorderLayout());
@@ -105,7 +105,7 @@ public class HomeFrame extends JFrame implements ActionListener, MouseListener {
         previewPanel.setBackground(new Color(0x5B3C31));
         previewPanel.setOpaque(true);
         for (int i = 0 ; i < 3 ; i++){
-            subpanel[i] = new JButton(new ImageIcon("src/Final_Project/assets/" + images[i]));
+            subpanel[i] = new JButton(new ImageIcon("./assets/" + images[i]));
             subpanel[i].setLayout(new BorderLayout());
             gbc.insets = new Insets(5,5,5,5);
 
@@ -148,7 +148,7 @@ public class HomeFrame extends JFrame implements ActionListener, MouseListener {
         for (int i = 0 ; i < 3 ; i++){
             if(e.getSource() == subpanel[i]){
 //                System.out.println("hovered!");
-                subpanel[i].setIcon(new ImageIcon("src/Final_Project/assets/"+type[i]+"hover.png"));
+                subpanel[i].setIcon(new ImageIcon("./assets/"+type[i]+"hover.png"));
             }
         }
     }
@@ -158,7 +158,7 @@ public class HomeFrame extends JFrame implements ActionListener, MouseListener {
         for (int i = 0 ; i < 3 ; i++){
             if(e.getSource() == subpanel[i]){
 //                System.out.println("keluar!");
-                subpanel[i].setIcon(new ImageIcon("src/Final_Project/assets/" + images[i]));
+                subpanel[i].setIcon(new ImageIcon("./assets/" + images[i]));
             }
         }
     }
