@@ -105,7 +105,6 @@ public class AdditionalServiceFrame extends JFrame implements MouseListener, Act
                 if(!((karakter >= '0') && (karakter <= '9') || (karakter == KeyEvent.VK_BACK_SPACE))){
                     getToolkit().beep();
                     key.consume();
-//                    JOptionPane.showMessageDialog(null,"16 Numbers Only","", JOptionPane.ERROR_MESSAGE);
                 }
 
             }
@@ -237,15 +236,6 @@ public class AdditionalServiceFrame extends JFrame implements MouseListener, Act
         restaurant.setBounds(600,450,190,40);
         restaurant.setFont(new Font("Times New Roman", Font.BOLD,15));
 
-//        restaurant.addMouseListener(new MouseAdapter() {
-//            @Override
-//            public void mouseClicked(MouseEvent e) {
-//                super.mouseClicked(e);
-//                dispose();
-//                MenuFrame food = new MenuFrame(index, database);
-//            }
-//        });
-
         button.setBounds(350,500,100,40);
         button.setText("Next");
         button.setFocusable(false);
@@ -263,8 +253,6 @@ public class AdditionalServiceFrame extends JFrame implements MouseListener, Act
         this.add(panel3);
 
         this.add(text);
-
-//        this.add(spinner);
 
         this.add(image1);
         this.add(image2);
@@ -365,14 +353,9 @@ public class AdditionalServiceFrame extends JFrame implements MouseListener, Act
                 } else if (restaurant.isSelected()) {
                     selectedRoom = "Restaurant";
                     adds.get(adds.size()-1).setType(selectedRoom);
-//                    database.Customers.get(index).setAdditonal(adds);
                     MenuFrame food = new MenuFrame(index, database, adds);
                     dispose();
                 }
-
-//                database.Customers.get(index).rooms.add(new BookingRoom());
-//                database.Customers.get(index).rooms.get(database.Customers.get(index).rooms.size() - 1).setType(selectedRoom);
-//                database.Customers.get(index).rooms.get(database.Customers.get(index).rooms.size() - 1).setQuantity((int) spinnerQuantity.getValue());
 
             }
             }

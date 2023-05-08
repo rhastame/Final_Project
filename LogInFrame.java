@@ -20,11 +20,8 @@ public class LogInFrame extends JFrame implements ActionListener {
     int index;
     Database database;
     LogInFrame(Database databasee){
-//        temp = customers;
         database = databasee;
-//    }
 
-//    public void openFrame(){
         ImageIcon logo = new ImageIcon("./assets/logo1.png");
         this.setIconImage(logo.getImage());
 
@@ -74,7 +71,6 @@ public class LogInFrame extends JFrame implements ActionListener {
                 super.mouseClicked(e);
                 dispose();
                 SignUp signup = new SignUp(database);
-//                signup.signup();
             }
         });
         marginBottom.add(submitBtn);
@@ -142,7 +138,6 @@ public class LogInFrame extends JFrame implements ActionListener {
 
     String username;
     String password;
-//    Customer current = new Customer();
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -159,7 +154,6 @@ public class LogInFrame extends JFrame implements ActionListener {
                     index = checkLogged();
                     HomeFrame homeFrame = new HomeFrame(index, database);
                     this.dispose();
-//                index = 150;
                 }
             }
         }

@@ -62,21 +62,16 @@ public class BookingRoomFrame extends JFrame implements ActionListener {
         title.setOpaque(true);
 
         panel1.setBounds(30,80,225,90);
-//        panel1.setBackground(Color.RED);
 
         label1.setText("Check In");
         label1.setFont(new Font("Times New Roman", Font.PLAIN, 20));
         label1.setBounds(0,0,100,40);
-//        label1.setBackground(Color.CYAN);
         label1.setHorizontalAlignment(JLabel.CENTER);
 
         textField1.setPreferredSize(new Dimension(225,35));
         textField1.setFont(new Font("Times New Roman",Font.PLAIN,18));
-//        textField1.setForeground(Color.gray);
-//        textField1.setBackground(Color.GRAY);
         textField1.setBackground(new Color(0Xb5a191));
         textField1.setCaretColor(Color.BLACK);
-//        textField1.setText("DD/MM/YY");
 
         hasilLabelCheckIn.setBounds(0,75, 100,10);
         hasilLabelCheckIn.setFont(new Font("Times New Roman", Font.PLAIN, 12));
@@ -87,21 +82,16 @@ public class BookingRoomFrame extends JFrame implements ActionListener {
 
 
         panel2.setBounds(285,80,225,90);
-//        panel2.setBackground(Color.BLUE);
 
         label2.setText("Check Out");
         label2.setFont(new Font("Times New Roman", Font.PLAIN, 20));
         label2.setBounds(0,0,100,40);
-//        label2.setBackground(Color.CYAN);
         label2.setHorizontalAlignment(JLabel.CENTER);
 
         textField2.setPreferredSize(new Dimension(225,35));
         textField2.setFont(new Font("Times New Roman",Font.PLAIN,18));
-//        textField2.setForeground(Color.gray);
-//        textField2.setBackground(Color.GRAY);
         textField2.setBackground(new Color(0Xb5a191));
         textField2.setCaretColor(Color.BLACK);
-//        textField2.setText("DD/MM/YY");
 
         hasilLabelCheckOut.setBounds(0,75, 100,10);
         hasilLabelCheckOut.setFont(new Font("Times New Roman", Font.PLAIN, 12));
@@ -111,12 +101,10 @@ public class BookingRoomFrame extends JFrame implements ActionListener {
         panel2.add(hasilLabelCheckOut);
 
         panel3.setBounds(540,80,225,75);
-//        panel3.setBackground(Color.GREEN);
 
         label3.setText("Quantity");
         label3.setFont(new Font("Times New Roman", Font.PLAIN, 20));
         label3.setBounds(0,0,100,40);
-//        label3.setBackground(Color.CYAN);
         label3.setHorizontalAlignment(JLabel.CENTER);
 
         spinnerModel = new SpinnerNumberModel(1,1,10000,1);
@@ -124,7 +112,6 @@ public class BookingRoomFrame extends JFrame implements ActionListener {
 
         spinnerQuantity.setPreferredSize(new Dimension(225,35));
         spinnerQuantity.setFont(new Font("Times New Roman",Font.PLAIN,18));
-//        spinnerQuantity.setBackground(new Color(0Xb5a191));
         spinnerQuantity.getEditor().getComponent(0).setBackground(new Color(0Xb5a191));
         spinnerQuantity.addKeyListener(new KeyAdapter() {
             @Override
@@ -133,7 +120,6 @@ public class BookingRoomFrame extends JFrame implements ActionListener {
                 if(!((karakter >= '0') && (karakter <= '9') || (karakter == KeyEvent.VK_BACK_SPACE))){
                     getToolkit().beep();
                     key.consume();
-//                    JOptionPane.showMessageDialog(null,"16 Numbers Only","", JOptionPane.ERROR_MESSAGE);
                 }
 
             }
@@ -355,13 +341,6 @@ public class BookingRoomFrame extends JFrame implements ActionListener {
                     rooms.get(rooms.size()-1).setQuantity((int)spinnerQuantity.getValue());
 
                     database.Customers.get(index).setRooms(rooms);
-
-//                database.Customers.get(index).rooms.add(new BookingRoom());
-//                database.Customers.get(index).rooms.get(database.Customers.get(index).rooms.size() - 1).setType(selectedRoom);
-//                database.Customers.get(index).rooms.get(database.Customers.get(index).rooms.size() - 1).setQuantity((int) spinnerQuantity.getValue());
-
-//                    System.out.println(database.Customers.get(index).rooms.get(database.Customers.get(index).rooms.size() - 1).getType());
-//                    System.out.println(database.Customers.get(index).rooms.get(database.Customers.get(index).rooms.size() - 1).getQuantity());
 
                     new AdditionalServiceFrame(index, database);
                     dispose();

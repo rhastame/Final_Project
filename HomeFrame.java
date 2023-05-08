@@ -29,20 +29,14 @@ public class HomeFrame extends JFrame implements ActionListener, MouseListener {
     };
     JPanel upperSide = new JPanel();
     JPanel previewPanel = new JPanel();
-//    String name = new String("...");
-//    String name = customer.getName();
-//
-//    JLabel text = new JLabel( "Welcome " + name + " to the Hotel");
     JButton button = new JButton("Book Now");
     JMenuBar menuBar = new JMenuBar();
     JMenu profile = new JMenu();
     JMenuItem logout = new JMenuItem("Logout");
     JMenuItem history = new JMenuItem("History");
     JDesktopPane desktopPane = new JDesktopPane();
-//    ArrayList<Customer> temp;
 
     public HomeFrame(int indexx, Database databasee){
-//        temp = customers;
         this.database = databasee;
         index = indexx;
         ImageIcon logo = new ImageIcon("./assets/logo1.png");
@@ -206,10 +200,7 @@ public class HomeFrame extends JFrame implements ActionListener, MouseListener {
 
         if(e.getSource() instanceof  JMenuItem menu){
             if(menu.getText().equals("Logout")){
-//                System.out.println("tes");
-//                System.out.println(database.Customers.get(1).getName());
                 new Login(database);
-//                login.login();
                 dispose();
             }
         }

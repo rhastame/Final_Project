@@ -18,7 +18,6 @@ public class History extends JFrame { JLabel labelTitle = new JLabel();
         this.setIconImage(logo.getImage());
         this.index = indexx;
         this.database = database;
-//        temps = customers;
         this.setTitle("History Booking Transaction");
 
         JLayeredPane layeredPane = new JLayeredPane();

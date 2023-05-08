@@ -20,24 +20,12 @@ public class SignUpFrame extends JFrame implements ActionListener {
     JPasswordField passwordTxt;
     JTextField creditTxt;
     JTextField phoneTxt;
-//    JFormattedTextField creditTxt;
-//    JFormattedTextField phoneTxt;
-
-    //    JFormattedTextField phoneTxt;
-//    JFormattedTextField creditTxt;
-//    double amount = 10000000;
-//    double amount2 = 10000000;
     Database database;
     ArrayList<Customer> temp;
 
     SignUpFrame(Database database){
         this.database = database;
-//        temp = database.getCustomers();
-//    }
 
-
-//    public void openFrame(){
-//        ImageIcon logo = new ImageIcon(getClass().getResource("Final_Project/assets/logo.png"));
         ImageIcon logo = new ImageIcon("./assets/logo1.png");
         this.setIconImage(logo.getImage());
 
@@ -50,7 +38,6 @@ public class SignUpFrame extends JFrame implements ActionListener {
         JLayeredPane layeredPane = new JLayeredPane();
         layeredPane.setBounds(0,0,700,500);
 
-//        ImageIcon background = new ImageIcon(getClass().getResource("Final_Project/assets/bg.jpg"));
         ImageIcon background = new ImageIcon("./assets/bg.jpg");
         Image img = background.getImage();
         Image temp = img.getScaledInstance(700,500,Image.SCALE_SMOOTH);
@@ -89,7 +76,6 @@ public class SignUpFrame extends JFrame implements ActionListener {
                 super.mouseClicked(e);
                 dispose();
                 Login login = new Login(database);
-//                login.login();
             }
         });
 
@@ -219,14 +205,8 @@ public class SignUpFrame extends JFrame implements ActionListener {
                 }else {
                     JOptionPane.showMessageDialog(this, "Enjoy exploring our palace!", "Welcome to Galvanize Hotel!", JOptionPane.INFORMATION_MESSAGE);
                     Customer current = new Customer();
-//                database.Customers.add(new Customer());
-//                database.Customers.get(database.Customers.size()-1).setName(nameTxt.getText());
-//                database.Customers.get(database.Customers.size()-1).data
-//                setPassword(Arrays.toString(passwordTxt.getPassword()));
                     database.addCustomer(database.Customers, name, pass);
-
-//                    current = database.Customers.get(database.Customers.size() - 1);
-//                System.out.println(current.getName());
+                    
                     int index = database.Customers.size()-1;
                     this.dispose();
                     HomeFrame homeFrame = new HomeFrame(index, database);

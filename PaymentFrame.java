@@ -179,12 +179,8 @@ public class PaymentFrame extends JFrame implements ActionListener {
                 System.out.println("hahaha");
                 String foods = "typeFood"+i;
                 String foodName = add.get(add.size()-1).menu.get(i).getName();
-//                labelMap = new HashMap<>();
                 JLabel label = new JLabel(foodName);
                 labelMap.put(foods, label);
-//                labelMap.get(foods).setBounds(30, height, 500, 15);
-//                labelMap.get(foods).setFont(p);
-//                labelMap.get(foods).setForeground(white);
 
                 String prices = new String("price"+i);
                 Integer pricee = add.get(add.size()-1).menu.get(i).getPrice();
@@ -193,13 +189,8 @@ public class PaymentFrame extends JFrame implements ActionListener {
 
                 subtotalprice += (pricee*quantityadd2);
 
-//                labelMap2 = new HashMap<>();
                 JLabel label2 = new JLabel(String.valueOf(priceee));
                 labelMap2.put(prices, label2);
-//                labelMap2.get(prices).setBounds(550, height, 200, 15);
-//                labelMap2.get(prices).setFont(p);
-//                labelMap2.get(prices).setForeground(white);
-//                labelMap.get(foods).setText(add.get(add.size()-1).menu.get(i).getName());
             }
 
             for (JLabel label : labelMap.values()) {
@@ -219,32 +210,7 @@ public class PaymentFrame extends JFrame implements ActionListener {
                 transaction.add(label2);
                 height2 += 15;
             }
-//            transaction.add(menus);
         }
-
-
-//        JLabel typeFood1 = new JLabel("Nasgor");
-//        typeFood1.setBounds(30, height, 100, 15);
-//        typeFood1.setFont(p);
-//        typeFood1.setForeground(white);
-//        JLabel price1 = new JLabel(100000);
-//        price1.setBounds(550, height, 200, 15);
-//        price1.setFont(p);
-//        price1.setForeground(white);
-//        transaction.add(typeFood1);
-//        transaction.add(price1);
-//
-//        height += 15;
-//        JLabel typeFood2 = new JLabel("Migor");
-//        typeFood2.setBounds(30, height, 100, 15);
-//        typeFood2.setFont(p);
-//        typeFood2.setForeground(white);
-//        JLabel price2 = new JLabel("Rp. 100000 x 2");
-//        price2.setBounds(550, height, 200, 15);
-//        price2.setFont(p);
-//        price2.setForeground(white);
-//        transaction.add(typeFood2);
-//        transaction.add(price2);
 
         JLabel subtotal = new JLabel("Subtotal");
         subtotal.setBounds(10, height+20, 200, 13);
@@ -339,9 +305,6 @@ public class PaymentFrame extends JFrame implements ActionListener {
         setVisible(true);
     }
 
-//    public static void main(String[] args) {
-//        new Payment();
-//    }
 
     @Override
     public void actionPerformed(ActionEvent e) {
