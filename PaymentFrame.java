@@ -303,6 +303,7 @@ public class PaymentFrame extends JFrame implements ActionListener {
         setMinimumSize(this.getMinimumSize());
         setLocationRelativeTo(null);
         setVisible(true);
+        this.setResizable(false);
     }
 
 
