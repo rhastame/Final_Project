@@ -18,8 +18,8 @@ public class Database {
         customers.get(customers.size()-1).setName(name);
         customers.get(customers.size()-1).setPassword(password);
         customers.get(customers.size()-1).setLogged(0);
-        customers.get(customers.size()-1).rooms.add(new BookingRoom());
-        customers.get(customers.size()-1).additonal.add(new AdditionalService());
+        customers.get(customers.size()-1).setRooms(new ArrayList<BookingRoom>());
+        customers.get(customers.size()-1).setAdditonal(new ArrayList<AdditionalService>());
     }
 
 }

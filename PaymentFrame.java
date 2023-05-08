@@ -351,6 +351,7 @@ public class PaymentFrame extends JFrame implements ActionListener {
                 getToolkit().beep();
                 JOptionPane.showMessageDialog(this,"Please choose the payment method","Uncompleted form!",JOptionPane.ERROR_MESSAGE);
             } else {
+                dispose();
                 new HomeFrame(index, database);
             }
         }
